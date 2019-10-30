@@ -1,0 +1,15 @@
+# windows
+dir   查看文件目录
+ipconfig  查看本地网卡ip信息
+tasklist   查看运行的进程
+
+import os
+
+os.system('ls')
+
+obj = subpocess.Popen('ls /',shell=True,
+                   stdout=subprocess.PIPE
+                   stderr=subprocess.PIPE
+                    )
+
+osj.stdout.read().decode('utf8')

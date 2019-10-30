@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>35 善于使用父亲的padding,而不是margin</title>
+    <style type="text/css">
+         *{
+             margin: 0;
+             padding: 0;
+         }
+
+        .father{
+            width: 180px;
+            height: 140px;
+            background-color: blue;
+            padding-top: 35px;
+        }
+
+        .xiongda{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin-left: 30px;
+            /*margin-top: 30px;*/
+
+
+        }
+    </style>
+</head>
+<body>
+<!--
+因为父亲没有border 那么儿子margin实际上踹的是 流 踹的行
+所以父亲就掉下来了
+-->
+    <div class="father">
+
+        <div class="xiongda">
+
+        </div>
+    </div>
+</body>
+</html>

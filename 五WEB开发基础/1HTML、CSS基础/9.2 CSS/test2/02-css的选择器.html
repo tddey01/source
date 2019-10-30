@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css的选择器</title>
+    <!--标签选择器-->
+    <style type="text/css">
+         body{
+             color: gray;
+             font-size: 12px;
+         }
+         /*p {*/
+             /*!* color 颜色*!*/
+             /*color: red;*/
+             /*!* 字体大小*!*/
+             /*font-size: 20px;*/
+         /*}*/
+        /*span {*/
+            /*color: yellow;*/
+        /*}*/
+
+        #s1 {
+            color: red;
+            font-size: 20px;
+        }
+
+        #s2 {
+            color: blue;
+            font-size: 16px;
+        }
+        #box {
+            /*background-color   背景颜色设置*/
+            background-color: antiquewhite;
+        }
+
+        .title{
+            color: yellowgreen;
+            font-size: 12px;
+        }
+
+        .alex {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+ css 的选择器  1 基本选择器  2 高级选择器
+    1 标签选择
+       标签选择器 可以选中所有的标签元素 比如 div  ul  li p等
+       不全标签 藏得多深 都能选中
+       选中的是所有的 而不是某一个 所以说  "共性" 而不是太恶心
+
+    2 id选择器
+      # 选中这个id
+        同一个页面中id不能重复
+        任何的标签都可以设置id
+        id 命名规范 要以字母 可以有数字  下划线_  大小写 严格区分 aa和AA
+
+    3 类选择器
+    所谓类 就是class  class与id非常相似  任何的标签 都可以加类
+    但是类可以重复   归类
+
+    同一个标签中可以携带多个类  用空格隔开
+
+     一定要有  "公共类"  的概念
+        1 不要试图用一个类将我们的页面写完，这个标签要携带多个类  共同设置样式
+        2 每个类要尽可能的小 有公共的概念 能让够更多的标签使用
+
+    类的使用 能够决定前端工程师的css水平多牛逼
+    完好了类  就等于玩好了css中的1/2
+
+
+    到底 使用id还是用class
+     答案  尽可能使用class  除非特殊情况一些特性可以用id
+
+     原因 id一般使用在js的  也就是说  js是通过id获取到标签
+
+
+-->
+    <div>
+        <p> 我是一个段落</p>
+        <ul>
+            <li>
+            <span>哈哈</span>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <p> 谷歌</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--id选择器-->
+    <div id="box">
+        <span id="s1"> 123</span>
+        <span id="s2"> 123</span>
+    </div>
+
+<!--    3 类选择器-->
+    <div class="box2">
+        <h3 id="h" class="title xiaoma egon alex"> 我是一个三级标题</h3>
+        <h3> 我是一个三级标题</h3>
+        <h3> 我是一个三级标题</h3>
+        <h3 class="title"> 我是一个三级标题</h3>
+        <h3> 我是一个三级标题</h3>
+        <h3> 我是一个三级标题</h3>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+ ./configure --prefix=/usr/local/httpd --enable-mods-shared=most --enable-headers --enable-mime-magic --enable-proxy --enable-so --enable-rewrite --with-ssl=../openssl-1.0.2r  --with-nghttp2=/usr/local/nghttp2 --enable-ssl --enable-deflate --with-pcre --with-included-apr --with-apr-util --enable-mpms-shared=all --enable-nonportable-atomics=yes --enable-remoteip --enable-http2 --enable-lua  --enable-dav  --enable-remoteip --enable-expires --enable-static-support  --enable-suexec   --enable-mpms-shared=all --with-included-apr --with-mpm=prefork --with-expat=builtin --enable-file-cache  --enable-cache  --enable-mods-shared=all --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr-util    --enable-http   --enable-echo   --enable-mem-cache   --enable-disk-cache --enable-zlib --enable-module=most  --with-pcre 
+ 
+ Bt-Panel: http://180.190.114.173:8888/8d3c2661
+username: silrg4yx
+password: 95272309

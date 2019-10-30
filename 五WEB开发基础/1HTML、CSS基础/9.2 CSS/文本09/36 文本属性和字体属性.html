@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本属性和字体属性</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        div{
+            width: 300px;
+            height: 100px;
+            /*background-color: red;*/
+            border: 1px solid red;
+            /*设置字体大小   px  是像素设置 rem  em  %  */
+            font-size: 20px;
+
+            /*font-weight: normal;  !*正常字体*! */
+            /*font-weight: bold;   !*加粗字体*!*/
+            /*font-weight: bolder;  !* 更深字体*!*/
+            font-weight: lighter;  /*更细字体*/
+            font-family: "Microsoft Yahei", "微软雅黑", "Arial", sans-serif;
+            /*text-align: left;  !*左边*!*/
+            /*text-align: right;  !*右边*!*/
+            text-align: center;   /*文本水平中间对齐*/
+            /*text-decoration: none;   !*默认是none*!*/
+             /*text-decoration: underline blue;  !*下划线  可以改变颜色  后面跟上颜色参数*!*/
+             text-decoration: none blue;  /* 清除改变a标签 下划线*/
+            color: red;   /*字体颜色改变*/
+            cursor: pointer;   /*鼠标移动到上面 显示小手状态 */
+            line-height: 100px;  /*他的高度等于屏幕的高度像素*/
+            /*lem = 20px*/
+            /*设置首字缩减 单位 em为准*/
+            text-indent: lem; /*缩进 */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        内容
+    </div>
+</body>
+</html>

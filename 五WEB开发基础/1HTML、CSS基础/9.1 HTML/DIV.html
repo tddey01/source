@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8" >
+    <title>常用标签一</title>
+</head>
+<body>
+    <div id="wrap">
+        <div class="para">
+            <p style="height: 2000px" id="p1">段落</p>
+        </div>
+
+        <div class="anchor">
+            我是普通的文本
+            <h1>
+ <!--a 标签属于行内标签  在一行内显示  设置宽高 不起作用 -->
+                <a href="http://www.baidu.com" target="_blank" title="路飞学城">路飞学城</a>
+                <a href="a.zip">下载包</a>
+                <a href="mailto:zhaoxu@tedu.cn" >联系我们</a>
+                <a href="#">跳转到顶部</a>
+                <a href="#p1">跳转到p1</a>
+
+                <a href="javascript:alert(1)">内容</a>
+                <a href="javascript:;">内容</a>
+            </h1>
+        </div>
+        <!-- 块级元素  1 独占一行  可以设置宽高-->
+        <div class="heading">
+            <h1>路飞学城</h1>
+            <h2>路飞学城</h2>
+            <h3>路飞学城</h3>
+            <h4>路飞学城</h4>
+            <h5>路飞学城</h4>
+            <h6>路飞学城</h6>
+        </div>
+
+
+        <div class="para">
+        <!-- 定义段落 通常指文章一段内容 -->
+        <p><strong>路飞学城</strong>立志帮助有志向的年轻人通过努力学习获得体面的工作和生活!路飞学员通过学习Python ,金融分析<br>,人工智能等互联网最前沿技术,开启职业生涯新可能</p>
+        <p>路飞学城立志帮助有志向的年轻人通过努力学习获得体面的工作和生活!路飞学员通过学习Python ,金融分析,<span>人工智能</span>等互联网最前沿技术,开启职业生涯新可能</p>
+        <p>路飞学城立志帮助有志向的年轻人通过努力学习获得体面的工作和生活!路飞学员通过学习Python ,金融分析,人工智能等互联网最前沿技术,开启职业生涯新可能</p>
+        </div>
+
+        <div class="lists">
+            <!-- 无序列表 -->
+            <ul type="circle">
+                <li>我的账户</li>
+                <li>我的订单</li>
+                <li>我的优惠券</li>
+                <li>我的收藏</li>
+                <li>退出</li>
+            </ul>
+            <!-- 有序列表 -->
+            <ol type="a">
+                <li>我的账户</li>
+                <li>我的订单</li>
+                <li>我的优惠券</li>
+                <li>我的收藏</li>
+                <li>退出</li>
+            </ol>
+        </div>
+    </div>  
+    <div class="image">
+        <!--设置属性   width  宽度   height 高度-->
+        <!--可以设置宽高    在一行内显示   叫做行内块标签 -->
+        <img src="./finance-right.png" alt="python图片" style="width: 200px;height: 200px;">
+         <img src="./machine-right.png" alt="Linux 图片" style="width: 200px;height: 200px">
+
+ <!-- 三种-->
+        <!--
+        1 块级元素  独占一行 可设置宽高  如果不设置宽高度 浏览器的宽度
+        2 行内元素  在一行展示 不鞥设置宽高    他的宽高根据内容去填充
+        3 行内块元素 在一行内展示 可设置宽高
+          -->
+    </div>
+</body>
+</html>

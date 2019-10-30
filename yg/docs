@@ -1,0 +1,15 @@
+'''
+db = [
+    [id,age,name,phone...],
+    [id,age,name,phone...],
+    [id,age,name,phone...],
+]
+
+db2 = {
+    'id':[1,2,3,4,5,6,7],
+    'age':[33,24,23,...],
+    'name':[]
+}
+
+whare age >22
+

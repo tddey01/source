@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-css的引入方式</title>
+    <style type="text/css">
+        /* 写我们的css代码*/
+        /* span选择器   标签选择器 共性*/
+        span{
+            color: yellow;
+        }
+    </style>
+
+    <style type="text/css">
+        /*@import url('./index.css');*/
+        @import "index.css";
+
+    </style>
+
+    <!-- 链接式 -->
+    <!--<link rel="stylesheet" href="./index.css">-->
+</head>
+<body>
+<!--
+1 行内样式
+
+2 内接样式
+
+3 外接样式
+    3。1 连接式
+    3。2 倒入式
+
+-->
+    <div>
+<!--color 改颜色   行内样式-->
+        <p style="color: red">
+            我是一个段落
+        </p>
+
+    </div>
+    <div>
+        <div>
+            <span>我是另一段落</span>
+            <a href="#">谷歌</a>
+        </div>
+    </div>
+
+</body>
+</html>

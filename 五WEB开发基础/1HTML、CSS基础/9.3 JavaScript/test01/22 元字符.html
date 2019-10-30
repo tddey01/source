@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22 元字符</title>
+</head>
+<body>
+    <script type="text/javascript">
+        window.onload = function () {
+        // 元字符 一些匹配的规则
+        // 1 单个字符和数字
+        // 1 匹配除换行符以为的任意字符
+         var str = "luffyCtiy 2018";
+         var reg = /./g;
+         console.log(reg.exec(str)); //
+
+
+        //    如果想不让字符有其他意义 转义  \ \.表示匹配。
+         str = "www.baidu.com";
+         var reg = /www\......\.com/g;
+         console.log(reg.exec(str)); // www.baidu.com
+
+
+       // 2 [] 匹配[] 里面的任意一个字符
+         var str1 = "hello";
+         var reg1 = /[a-zA-Z0-9]/g; //匹配字母还是数字
+         console.log(reg1.exec(str1)); //h
+
+         var str2 = "a12343";
+         var reg2 = /[0-9][0-9][0-9]/g;
+         console.log(reg2.exec(str2)); //134
+
+       // 3 [^] 所有不在这个范围内的字符
+        var str3 = 'abd123';
+        var reg3 = /[^a-z][^A-Z]/g; //匹配除小写字母以外的任意字符
+        console.log(reg3.exec(str3)); //12
+
+        // 4 \d  匹配数字 对立 \D 匹配非数字
+            var str4 = "web";
+            var reg4 = /\d/g;  //匹配数字
+            var reg5 = /\D/g;  // 非数字
+            console.log(reg4.exec(str4)); //null
+            console.log(reg5.exec(str4)); // w
+
+        //5 \w 匹配数字 字母 下划线 \w 匹配除数字 字母 下划线以外的任意字符
+            var reg6 = /\w/g; //匹配数字 字母 下划线_
+            var reg7 = /\W/g; //匹配除数字 字母 下划线以外的任意字符
+            console.log(reg6.exec(str4)); //w
+            console.log(reg7.exec(str4)); //null
+
+        //6 \s 匹配空格 trim()
+            var str5 = "luffy";
+            var reg8 = /\s/g;   //空格
+            var reg9 = /\S/g; //非空白字符
+            console.log(reg8.exec(str5)); // " "
+            console.log(reg9.exec(str5)); //1
+
+        // 7 ^:以什么开头  $:以什么结尾
+            var str6 = "www.luffy.com";
+            var reg10 = /^www/g;   //^字符
+            console.log(reg10.exec(str6)); // www
+
+            var reg11 = /www\......\....$/g; //字符$
+            console.log(reg11.exec(str6)); //www.luffy.comn
+
+//------------------------------------重复字符------------------------------------
+
+        // 重复的字符
+        //   7  ？:匹配前面的字符0个或一个
+            var str7 = '123webr44546ere';
+            var reg12 = /[0-9]?/g;
+            console.log(reg12.exec(str7)); //"1"
+
+        //    8 *:匹配0个或任意多个字符 尽可能多匹配
+            var reg13 = /[a-z]*/g; //匹配小写字母 0个或多个
+            console.log(reg13.exec(str7)); //aaa
+
+
+        //    9 +:至少匹配一次
+            var reg14 = /\d+/g;
+            console.log(reg14.exec(str7)); //123
+
+
+        //    10 {10}：匹配连续的10个自数字
+            var stra = "11274567890";
+        //    以1 开头后面连续匹配10个数字结尾
+            var rega = /^1\d{10}$/g;  //匹配连续的10个字符
+            console.log(rega.exec(stra));
+
+        //    11 {min，max} 最少min个最多max个
+            var strb = "edg";
+        //    以大小英文字母结尾开头并且最少2个最多三个字母结尾
+            var regb = /^[a-zA-z]{2,3}$/g;
+            console.log(regb.exec(strb)); //edg
+
+
+        //    12 |: 竖立 或者
+            var strc = "www.google"; //baidu google luffycity
+            var regc = /www.baidu|google|luffycity/g;
+            console.log(regc.exec(strc));
+
+
+        //    （） 分组
+            var strc = "www.google"; //baidu google luffycity
+            var regc = /(baidu)|(google)|(luffycity)/g;
+            console.log(regc.exec(strc)) ;
+
+        // 获取匹配的字符串
+            console.log(RegExp.$1);
+            console.log(RegExp.$2);
+            console.log(RegExp.$3);
+
+
+            var str = "helloworld";
+            var reg = /(hello)(world)/g;
+            console.log(reg.exec(str));
+            console.log(RegExp.$1);
+        //    将分组好的匹配 调换顺序
+            console.log(str.replace(reg,"$2 $1"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒模型的计算</title>
+    <style type="text/css">
+         /*div {*/
+             /*width: 400px;*/
+             /*height: 400px;*/
+             /*border: 1px solid red ;*/
+         /*}*/
+
+        /*div {*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*border: 1px solid red;*/
+            /*padding: 100px;*/
+        /*}*/
+
+        div{
+            width: 0;
+            height: 0;
+            border: 1px solid red;
+            padding: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+  如果想保证盒子的真实宽度 加width应该减pading 减width应该加padding
+-->
+    <div>
+        内容
+    </div>
+</body>
+</html>

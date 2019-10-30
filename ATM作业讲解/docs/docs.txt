@@ -1,0 +1,62 @@
+模拟实现一个ATM + 购物商城程序
+
+额度 15000或自定义
+实现购物商城，买东西加入 购物车，调用信用卡接口结账
+可以提现，手续费5%
+支持多账户登录
+支持账户间转账
+记录每月日常消费流水
+提供还款接口
+ATM记录操作日志
+提供管理接口，包括添加账户、用户额度，冻结账户等。。。
+用户认证用装饰器
+
+
+步骤
+    分析功能   需求
+    账户数据的增删盖查  加钱  减钱
+    日志
+    模块之间的互相调用
+    功能的重用
+
+    画流程图
+
+    搭框架
+
+
+atm_server ---> main.entrance --> authenticate --> load_account_data
+
+取现
+    输入要取得钱
+    到account_data里面的拿到现有余额  balance
+    算出手续费 + 要取得钱  判断 是否在在balance
+        如果大于  就减去钱  数据下沉硬盘  同时把新的数据写入账户文件
+
+
+        记录日志
+
+
+        如果小于  打印余额不足
+
+tran_types = {
+        withdraw :minus
+        pay_back : plus
+        transfer ...
+
+}
+
+
+def make_transaction(logger,user_obj,tran_type,amont,**kwargs):
+    1 交易类型  tran_type
+    2 withdraw
+            减钱
+    elif py_back
+            加钱
+    拿着tran_type 到trans_types dirc扎到对应的 动作
+       算出手续费
+       根据交易类型操作账户数据数据
+       把最新的数据写入账户文件
+
+       返回   操作结果
+
+

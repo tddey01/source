@@ -1,0 +1,41 @@
+04/02/2019 11:30:06 PM This  massage should go  to the log file
+04/02/2019 11:30:06 PM So should  this
+04/02/2019 11:30:06 PM And this  too
+04/02/2019 11:32:35 PM-10 This  massage should go  to the log file 
+04/02/2019 11:32:35 PM-20 So should  this 
+04/02/2019 11:32:35 PM-30 And this  too 
+04/02/2019 11:32:54 PM-10- This  massage should go  to the log file 
+04/02/2019 11:32:54 PM-20- So should  this 
+04/02/2019 11:32:54 PM-30- And this  too 
+04/02/2019 11:34:18 PM DEBUG This  massage should go  to the log file 
+04/02/2019 11:34:18 PM INFO So should  this 
+04/02/2019 11:34:18 PM WARNING And this  too 
+04/02/2019 11:35:39 PM DEBUG D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  This  massage should go  to the log file 
+04/02/2019 11:35:39 PM INFO D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  So should  this 
+04/02/2019 11:35:39 PM WARNING D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  And this  too 
+04/02/2019 11:37:46 PM DEBUG D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  This  massage should go  to the log file 
+04/02/2019 11:37:46 PM INFO D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  So should  this 
+04/02/2019 11:37:46 PM WARNING D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  And this  too 
+04/02/2019 11:39:29 PM DEBUG D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py 常用模块学习-logging模块基础   This  massage should go  to the log file 
+04/02/2019 11:39:29 PM INFO D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py 常用模块学习-logging模块基础   So should  this 
+04/02/2019 11:39:29 PM WARNING D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py 常用模块学习-logging模块基础   And this  too 
+04/02/2019 11:39:55 PM ERROR D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py 常用模块学习-logging模块基础   from savhii .... 
+04/02/2019 11:39:55 PM DEBUG D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py 常用模块学习-logging模块基础   This  massage should go  to the log file 
+04/02/2019 11:39:55 PM INFO D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py 常用模块学习-logging模块基础   So should  this 
+04/02/2019 11:39:55 PM WARNING D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py 常用模块学习-logging模块基础   And this  too 
+04/02/2019 11:40:58 PM ERROR D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  from savhii .... 
+04/02/2019 11:40:58 PM DEBUG D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  This  massage should go  to the log file 
+04/02/2019 11:40:58 PM INFO D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  So should  this 
+04/02/2019 11:40:58 PM WARNING D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  And this  too 
+04/02/2019 11:41:39 PM ERROR D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  52 from savhii .... 
+04/02/2019 11:41:39 PM DEBUG D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  54 This  massage should go  to the log file 
+04/02/2019 11:41:39 PM INFO D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  55 So should  this 
+04/02/2019 11:41:39 PM WARNING D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  56 And this  too 
+04/02/2019 11:43:40 PM ERROR D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  52 1  from savhii .... 
+04/02/2019 11:43:40 PM DEBUG D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  54 1  This  massage should go  to the log file 
+04/02/2019 11:43:40 PM INFO D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  55 1  So should  this 
+04/02/2019 11:43:40 PM WARNING D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  56 1  And this  too 
+04/02/2019 11:44:59 PM ERROR D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  1  from savhii .... 
+04/02/2019 11:44:59 PM DEBUG D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  1  This  massage should go  to the log file 
+04/02/2019 11:44:59 PM INFO D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  1  So should  this 
+04/02/2019 11:44:59 PM WARNING D:/project/source-py/常用模块/常用模块学习-logging模块基础.py  常用模块学习-logging模块基础.py  1  And this  too 

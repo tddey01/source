@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用标签分类和嵌套规则</title>
+</head>
+<body>
+    <div class="wrapper">
+    <!--     块级元浸塑：div  p   h1~h6 ol  ul   table  form li 标签
+                独占一行
+                可以设置宽度和高度 如果设置了宽度和高度 则就当前的宽高 如果宽度和高度没有设置 宽度和就是父盒子的宽度
+                高度根据内容填充
+    -->
+
+        <div class="left">
+            这是路飞学车
+            <div>
+                这是我的战场
+<!--                <div style="width: 500px;height: 100px">  hello</div>-->
+                <ul>
+                    <li>
+                        <h2>word</h2>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="right">
+<!--             a span br i em strong label
+    行内元素  在一行内展示  不能设置宽度和高度  宽度和高度 根据内容填充
+ -->
+
+            <a href="#">百度</a>
+            <a href="#">谷歌</a>
+
+            <span style="width: 100px;height: 200px;"> 一些文本</span>
+            <span> 二些文本</span>
+        </div>
+
+        <div class="inline-bolck">
+                <!--行内块
+                        在一行内显示
+                        可以设置宽高
+                        -->
+            <img src="./finance-right.png" alt="一张图片">
+            <input type="text" name="username" style="width: 200px; height: 50px">
+
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>

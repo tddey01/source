@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动元素互相贴</title>
+            <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box1 {
+            width: 100px;
+            height: 400px;
+            background-color: red;
+            float: left; /*左浮动*/
+
+        }
+
+        .box2 {
+            width: 150px;
+            height: 450px;
+            float: left;
+            background-color: yellow;
+
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            float: left;   /*左*/
+            background-color: purple;
+
+        }
+        /*span{*/
+            /*background-color: green;*/
+            /*float: left;*/
+            /*!*width: 300px;*!*/
+            /*!*height: 50px;*!*/
+        /*}*/
+    </style>
+</head>
+<body>
+<!--
+浮动的元素互相贴靠
+  如果父元素有足够的空间  那么雅虎紧靠谷歌  谷歌紧靠百度  百度紧靠边
+  如果没有足够的空间  那么就会靠着百度  如果没有足够的空间没有靠着百度   他会自己往边靠
+-->
+    <div class="box1">百度</div>
+    <div class="box2">谷歌</div>
+    <div class="box3">雅虎</div>
+    <!--<span>span标签</span>-->
+    <!--<span>span标签</span>-->
+</body>
+</html>

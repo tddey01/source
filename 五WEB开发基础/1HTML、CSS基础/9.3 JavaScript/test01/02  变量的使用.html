@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量使用</title>
+</head>
+<body>
+    <script type="text/javascript">
+// 在js中使用的var关键字来声明 js语言他是一个弱类型语言
+//         a = 2 a = '2'
+//        变量的声明和定义（赋值） 大部分前端工程师 都是使用的这种方式
+        var a = 100;
+
+
+        // 先声明变量 未来定义
+        var b ;
+        b = '200';
+
+        console.log(a);
+        console.log(b);
+
+        var c;
+        // Uncaught ReferenceError: c is not defined  是没有定义的
+        console.log(c); //undefined 未定义
+
+
+        alert(a)
+    </script>
+</body>
+</html>

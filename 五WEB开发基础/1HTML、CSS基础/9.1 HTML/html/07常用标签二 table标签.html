@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kn</title>
+</head>
+<body>
+<!--
+表格
+  table 表格
+  thead  表格头
+  tbody   表格主体
+  tr  表格行
+  th  表格头里面的单元格 （默认加粗并且居中）
+  td  表格主体里的单元格
+  tfoot   表格底部
+ -->
+    <div class="table">
+        <table border=""  cellspacing="0">
+                <!--表格头-->
+            <thead>
+                <!--表格行-->
+                <tr>
+                    <!--表格列，【注意】这里使用的是th-->
+                    <th></th>
+                    <th>星期一</th>
+                    <th>星期二</th>
+                    <th>星期三</th>
+                    <th>星期四</th>
+                    <th>星期五</th>
+                </tr>
+            </thead>
+            <!--表格主体-->
+            <tbody>
+                <!--表格行-->
+                <tr>
+                    <!-- 竖着合并 -->
+                    <td rowspan="3">上午</td>
+                    <!--表格列，【注意】这里使用的是td-->
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>英文</td>
+                    <td>生物</td>
+                    <td>化学</td>
+                </tr>
+                <tr>
+                    <!--表格列，【注意】这里使用的是td-->
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>英文</td>
+                    <td>生物</td>
+                    <td>化学</td>
+                </tr>
+                <tr>
+                    <!--表格列，【注意】这里使用的是td-->
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>英文</td>
+                    <td>生物</td>
+                    <td>化学</td>
+                </tr>
+                <tr>
+                    <!--  -->
+                    <td rowspan="2">下午</td>
+                    <!--表格列，【注意】这里使用的是td-->
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>英文</td>
+                    <td>生物</td>
+                    <td>化学</td>
+                </tr>
+                <tr>
+                    <!--表格列，【注意】这里使用的是td-->
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>英文</td>
+                    <td>生物</td>
+                    <td>化学</td>
+                </tr>
+            </tbody>
+            <!--表格底部-->
+            <tfoot>
+                <tr>
+                    <!-- 横着合并 -->
+                    <td colspan="6">课程表</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+</html>

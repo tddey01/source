@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        /*根据属性查找*/
+        label[for]{
+            color: red;
+            font-size: 20px;
+        }
+
+        /*根据属性和值查找*/
+        label[for="pwd"]{
+            color: yellow;
+        }
+
+        /*找到所有title属性以vip开头的元素：*/
+        label[for^='vip']{
+            font-size: 30px;
+        }
+
+        /*找到所有title属性以p2结尾的元素：*/
+        label[for$='p2']{
+            font-size: 40px;
+        }
+        /*找到所有title属性中包含（字符串包含）ser的元素：*/
+        label[for*='ser']{
+            color: green;
+        }
+        /*表单常用*/
+        input[type='text']{
+            background-color: purple;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--属性选择器 通常在 表单控件中  使用 比较频繁-->
+    <div>
+        <form action="">
+            <label for="user">用户名</label>
+            <input type="text" name="" id="user">
+            <label for="pwd">密码</label>
+            <label for="vip1">vip1</label>
+            <label for="vip2">vip2</label>
+            <label for="user2">用户名2</label>
+            <label for="user3">用户名3</label>
+
+        </form>
+    </div>
+
+</body>
+</html>

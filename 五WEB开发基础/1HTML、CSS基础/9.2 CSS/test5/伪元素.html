@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素</title>
+    <style type="text/css">
+        /*选中文本第一首字大小*/
+        p:first-letter{
+            color: red;
+            font-size: 30px;
+        }
+        /*content 结合使用 在。。。。 之前 添加内容 这个属性使用不是很频繁 了解  使用此为元素选择器 一定要结合content属性*/
+        p:before{
+            content: 'alex';
+        }
+        /*在...之后 说那个非常频繁 通常与咱们后面要讲到布局 有很大关联 （清除浮动）*/
+        p:after{
+            content: '&';
+            color: green;
+            font-size: 40px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        我是一个段落
+    </p>
+</body>
+</html>

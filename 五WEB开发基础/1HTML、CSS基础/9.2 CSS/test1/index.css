@@ -1,0 +1,8 @@
+/*a {*/
+    /*!*font-size 改变字体大小设置*!*/
+    /*font-size: 30px;*/
+/*}*/
+
+/*@import "content.css";*/
+
+@import url('./content.css');

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+	<style type="text/css">
+
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+
+		}
+		.box1{
+			background-color: red;
+            /* 绝对定位  1 脱标  2 做遮盖效果   提升了层级  3  设置绝对定位之后 不区分行内元素和块级元素  都能设置宽高*/
+            position: absolute;
+		}
+		.box2{
+			background-color: green;
+
+		}
+		.box3{
+			background-color: blue;
+		}
+        /*span{*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*    background-color: pink;*/
+        /*    position: absolute;*/
+        /*}*/
+
+	</style>
+</head>
+<body>
+
+	<!-- 相对定位三大特性： 1.不脱标  2.形影分离  3.老家留坑 :占着茅房不拉屎，恶心人 。 所以说 相对定位 在页面中没有什么太大的作用。影响我们页面的布局。但是我们不要使用相对定位来做压盖效果-->
+
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+    <span style="width: 100px; height: 100px;background-color: purple;position: absolute;"></span>
+
+</body>
+</html>
